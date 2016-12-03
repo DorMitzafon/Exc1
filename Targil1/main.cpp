@@ -1,15 +1,13 @@
-//
-//  main.cpp
-//  Targil1
-//
-//  Created by Dor Mitzafon on 02/12/2016.
-//  Copyright © 2016 Dor Mitzafon. All rights reserved.
-//
-
+#include <windows.h>
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include "TheSnakesGame.h"
+#include "_board.h"
+
+int main() {
+	TheSnakesGame game;
+	game.setBoard(board_example);
+	game.init();
+	game.run();
 }
